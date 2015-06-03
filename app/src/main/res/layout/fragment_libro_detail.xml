@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".LibroDetailFragment"
+    >
+
+    <TextView
+        android:id="@+id/libro_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbffffff"
+        android:paddingLeft="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Buenas"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/iv_libro_detail"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignLeft="@+id/libro_detail"
+            android:layout_alignStart="@+id/libro_detail"
+            android:layout_alignRight="@+id/libro_detail"
+            android:layout_alignEnd="@+id/libro_detail"
+            android:layout_below="@+id/libro_detail" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/iv_libro_detail"
+        android:layout_alignLeft="@+id/iv_libro_detail"
+        android:layout_marginBottom="61dp"
+        android:layout_below="@+id/iv_libro_detail" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/tv_libro_detail"
+            android:layout_alignRight="@+id/iv_libro_detail"
+            android:layout_alignEnd="@+id/iv_libro_detail"
+            android:layout_below="@+id/iv_libro_detail"
+            android:layout_alignLeft="@+id/iv_libro_detail"
+            android:layout_alignStart="@+id/iv_libro_detail" />
+        </ScrollView>
+</RelativeLayout>
